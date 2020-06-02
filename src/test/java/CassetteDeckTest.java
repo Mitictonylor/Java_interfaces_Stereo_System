@@ -10,7 +10,7 @@ public class CassetteDeckTest {
 
     @Before
     public void setUp(){
-        cassetteDeck = new CassetteDeck("Sony","model1");
+        cassetteDeck = new CassetteDeck("Sony","model1",10);
     }
 
     @Test
@@ -25,4 +25,14 @@ public class CassetteDeckTest {
     public void canPlay() {
         assertEquals("play, play", cassetteDeck.play());
     }
+    @Test
+    public void hasVolume() {
+        assertEquals(10, cassetteDeck.getVolume());
+    }
+    @Test
+    public void canSetPlay() {
+        cassetteDeck.setVolume(15);
+        assertEquals(15, cassetteDeck.getVolume());
+    }
+
 }
