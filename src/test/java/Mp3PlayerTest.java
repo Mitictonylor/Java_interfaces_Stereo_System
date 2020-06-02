@@ -32,7 +32,15 @@ public class Mp3PlayerTest {
     public void canGetConnectionName() {
         assertEquals("The device is connected to MyStereo", mp3Player.connect(stereo));
     }
+    @Test
+    public void canGetMake() {
+        assertEquals("Apple", mp3Player.getMake());
+    }
 
+    @Test
+    public void canGetModel() {
+        assertEquals("banana", mp3Player.getModel());
+    }
 
 
 

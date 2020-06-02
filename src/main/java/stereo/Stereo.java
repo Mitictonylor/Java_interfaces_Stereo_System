@@ -45,6 +45,8 @@ public class Stereo {
         this.setVolume((this.getVolume() +1));
     }
     public void lowVolume(){
+        if (this.volume >= 1){
         this.setVolume((this.getVolume() -1));
+    }
     }
 }

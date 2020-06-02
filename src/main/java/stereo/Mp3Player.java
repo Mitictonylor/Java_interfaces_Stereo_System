@@ -14,6 +14,14 @@ public class Mp3Player  implements IConnect {
        this.model = model;
     }
 
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
     public String connect(Stereo stereo){
         return "The device is connected to " + stereo.getName();
     }
