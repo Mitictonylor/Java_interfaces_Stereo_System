@@ -7,7 +7,7 @@ public class CassetteDeck extends Components implements IPlay{
     }
 
     public String play() {
-        return "playplay";
+        return "play, play";
 
     }
 }

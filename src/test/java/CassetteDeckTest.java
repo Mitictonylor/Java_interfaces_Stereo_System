@@ -21,4 +21,8 @@ public class CassetteDeckTest {
     public void hasModel() {
         assertEquals("model1", cassetteDeck.getModel());
     }
+    @Test
+    public void canPlay() {
+        assertEquals("play, play", cassetteDeck.play());
+    }
 }
