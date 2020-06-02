@@ -1,6 +1,6 @@
 package stereo.components;
 
-public class CdPlayer extends Components{
+public class CdPlayer extends Components implements IPlay{
 
     private int numberOfCds;
 
@@ -15,5 +15,9 @@ public class CdPlayer extends Components{
 
     public void setNumberOfCds(int numberOfCds) {
         this.numberOfCds = numberOfCds;
+    }
+
+    public String play() {
+        return "play, play";
     }
 }
