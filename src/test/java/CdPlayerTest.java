@@ -9,7 +9,7 @@ public class CdPlayerTest {
 
     @Before
     public void setUp(){
-        cdPlayer = new CdPlayer("Sony","model1", 10,4);
+        cdPlayer = new CdPlayer("Sony","model1", 4);
     }
 
     @Test
@@ -35,13 +35,5 @@ public class CdPlayerTest {
     public void canPlay() {
         assertEquals("play, play", cdPlayer.play());
     }
-    @Test
-    public void hasVolume() {
-        assertEquals(10, cdPlayer.getVolume());
-    }
-    @Test
-    public void canSetPlay() {
-        cdPlayer.setVolume(15);
-        assertEquals(15, cdPlayer.getVolume());
-    }
+
 }

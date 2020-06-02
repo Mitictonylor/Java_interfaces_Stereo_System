@@ -10,7 +10,7 @@ public class RecordDeckTest {
 
     @Before
     public void setUp(){
-        recordDeck = new RecordDeck("Sony","model1", 10,4);
+        recordDeck = new RecordDeck("Sony","model1", 4);
     }
 
     @Test
@@ -32,13 +32,5 @@ public class RecordDeckTest {
         recordDeck.setPlaySpeed(3);
         assertEquals(3, recordDeck.getPlaySpeed());
     }
-    @Test
-    public void hasVolume() {
-        assertEquals(10, recordDeck.getVolume());
-    }
-    @Test
-    public void canSetPlay() {
-        recordDeck.setVolume(15);
-        assertEquals(15, recordDeck.getVolume());
-    }
+
 }

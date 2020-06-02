@@ -4,12 +4,10 @@ public abstract class Components {
 
     String make;
     String model;
-    int volume;
 
-    public Components(String make, String model, int volume) {
+    public Components(String make, String model) {
         this.make = make;
         this.model = model;
-        this.volume = volume;
     }
 
 
@@ -22,11 +20,5 @@ public abstract class Components {
     }
 
 
-    public int getVolume() {
-        return volume;
-    }
 
-    public void setVolume(int volume) {
-        this.volume = volume;
-    }
 }

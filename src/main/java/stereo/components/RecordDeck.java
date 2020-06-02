@@ -4,8 +4,8 @@ public class RecordDeck extends Components{
 
     private int playSpeed;
 
-    public RecordDeck(String make, String model, int volume, int playSpeed) {
-        super(make, model, volume);
+    public RecordDeck(String make, String model, int playSpeed) {
+        super(make, model);
         this.playSpeed = playSpeed;
     }
 
