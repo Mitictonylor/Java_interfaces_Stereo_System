@@ -22,4 +22,9 @@ public class RadioTest {
     public void hasModel() {
         assertEquals("model1", radio.getModel());
     }
+
+    @Test
+    public void canShowTheRadioStation() {
+        assertEquals("Radio1", radio.tune("Radio1"));
+    }
 }
