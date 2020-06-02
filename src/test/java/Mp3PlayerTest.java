@@ -5,7 +5,7 @@ import stereo.components.CassetteDeck;
 import stereo.components.CdPlayer;
 import stereo.components.Radio;
 import stereo.components.RecordDeck;
-import stereo.device.Mp3Player;
+import stereo.Mp3Player;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,8 +24,8 @@ public class Mp3PlayerTest {
         radio = new Radio("JVC", "model2");
         recordDeck = new RecordDeck("Bose", "model3", 3);
         cassetteDeck = new CassetteDeck("Panasonic","model4");
-        stereo = new Stereo("MyStereo",cdplayer,radio,recordDeck,cassetteDeck);
-        mp3Player = new Mp3Player();
+        stereo = new Stereo("MyStereo",cdplayer,radio,recordDeck,cassetteDeck,0);
+        mp3Player = new Mp3Player("Apple", "banana");
     }
 
     @Test

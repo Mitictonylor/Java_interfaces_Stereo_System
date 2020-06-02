@@ -22,7 +22,7 @@ public class StereoTest {
         radio = new Radio("JVC", "model2");
         recordDeck = new RecordDeck("Bose", "model3", 3);
         cassetteDeck = new CassetteDeck("Panasonic","model4");
-        stereo = new Stereo("MyStereo",cdplayer,radio,recordDeck,cassetteDeck);
+        stereo = new Stereo("MyStereo",cdplayer,radio,recordDeck,cassetteDeck,10);
     }
 
     @Test

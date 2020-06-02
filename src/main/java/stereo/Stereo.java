@@ -6,42 +6,45 @@ import stereo.components.Radio;
 import stereo.components.RecordDeck;
 
 public class Stereo {
-    public String name;
-    CdPlayer cdplayer;
-    Radio radio;
-    RecordDeck recordDeck;
-    CassetteDeck cassetteDeck;
+    private String name;
+    private CdPlayer cdplayer;
+    private Radio radio;
+    private RecordDeck recordDeck;
+    private CassetteDeck cassetteDeck;
+    private int volume;
 
-    public Stereo(String name, CdPlayer cdplayer, Radio radio, RecordDeck recordDeck, CassetteDeck cassetteDeck) {
+
+    public Stereo(String name, CdPlayer cdplayer, Radio radio, RecordDeck recordDeck, CassetteDeck cassetteDeck, int volume) {
         this.name = name;
         this.cdplayer = cdplayer;
         this.radio = radio;
         this.recordDeck = recordDeck;
         this.cassetteDeck = cassetteDeck;
+        this.volume = volume;
     }
 
     public String getName() {
         return name;
     }
 
-    public CdPlayer getCdplayer() {
-        return cdplayer;
-    }
-
-    public Radio getRadio() {
-        return radio;
-    }
-
-    public RecordDeck getRecordDeck() {
-        return recordDeck;
-    }
-
-    public CassetteDeck getCassetteDeck() {
-        return cassetteDeck;
-    }
-
     public String tuneRadio(String radioChannel){
-      return this.radio.tune(radioChannel);
+      return "Radio chose is " + this.radio.tune(radioChannel);
+    }
+    public String playCd(){
+        return this.cdplayer.play();
     }
 
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+    public void raiseVolume(){
+        this.setVolume((this.getVolume() +1));
+    }
+    public void lowVolume(){
+        this.setVolume((this.getVolume() -1));
+    }
 }
