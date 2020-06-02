@@ -8,4 +8,12 @@ public class CdPlayer extends Components{
         super(make, model);
         this.numberOfCds = numberOfCds;
     }
+
+    public int getNumberOfCds() {
+        return this.numberOfCds;
+    }
+
+    public void setNumberOfCds(int numberOfCds) {
+        this.numberOfCds = numberOfCds;
+    }
 }
