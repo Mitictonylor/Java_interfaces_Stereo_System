@@ -31,4 +31,8 @@ public class CdPlayerTest {
         cdPlayer.setNumberOfCds(3);
         assertEquals(3, cdPlayer.getNumberOfCds());
     }
+    @Test
+    public void canPlay() {
+        assertEquals("play, play", cdPlayer.play());
+    }
 }
