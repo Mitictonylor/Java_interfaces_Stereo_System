@@ -10,7 +10,7 @@ public class RadioTest {
 
     @Before
     public void setUp(){
-        radio = new Radio("Sony","model1");
+        radio = new Radio("Sony","model1",10);
     }
 
     @Test
@@ -26,5 +26,14 @@ public class RadioTest {
     @Test
     public void canShowTheRadioStation() {
         assertEquals("Radio1", radio.tune("Radio1"));
+    }
+    @Test
+    public void hasVolume() {
+        assertEquals(10, radio.getVolume());
+    }
+    @Test
+    public void canSetPlay() {
+        radio.setVolume(15);
+        assertEquals(15, radio.getVolume());
     }
 }
